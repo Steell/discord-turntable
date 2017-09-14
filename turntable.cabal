@@ -1,0 +1,71 @@
+name:                turntable
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/turntable#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2017 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+library
+  exposed-modules:     Network.Discord.Types
+                     , Network.Discord.Types.Channel
+                     , Network.Discord.Types.Guild
+                     , Network.Discord.Types.Events
+                     , Network.Discord.Types.Gateway
+  other-modules:       Network.Discord.Types.Prelude
+  build-depends:       base==4.*
+                     , aeson>=1.0 && <1.2
+                     , text==1.2.*
+                     , time>=1.6 && <1.9
+                     , hashable==1.2.*
+                     , vector>=0.10 && <0.13
+                     , unordered-containers==0.2.*
+                     , transformers==0.5.*
+                     , cereal>=0.5
+                     , lens>=4.15
+  ghc-options:         -Wall
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
+executable turntable
+  hs-source-dirs:      src
+  other-modules:       Network.Discord.Types
+                     , Network.Discord.Types.Channel
+                     , Network.Discord.Types.Guild
+                     , Network.Discord.Types.Events
+                     , Network.Discord.Types.Gateway
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , containers >= 0.5.8
+                     , lens >= 4.15.3
+                     , mtl
+                     , optparse-applicative
+                     -- , discord-hs >= 0.4
+                     , acid-state
+                     , text
+                     , stm >= 2.4
+                     , conduit
+                     , conduit-combinators
+                     , conduit-extra
+                     , bytestring
+                     , network >= 2.6
+                     , safecopy
+                     , concurrent-extra
+                     , monad-extras
+                     , auto
+                     , aeson
+                     , wuss
+                     , websockets
+                     , lens-aeson
+                     , hslogger >= 1.2
+                     , req >= 0.2
+                     , cereal-text >= 0.1
+                     , async >= 2.1

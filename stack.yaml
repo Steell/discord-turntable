@@ -1,0 +1,14 @@
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
+extra-deps:
+#- discord-gateway-0.2.2
+#- discord-hs-0.4.2
+#- discord-rest-0.2.2
+#- discord-types-0.2.2
+- concurrent-extra-0.7.0.11
+- containers-0.5.10.2
+- lens-4.15.3
+- happy-1.19.7
+resolver: lts-8.23
